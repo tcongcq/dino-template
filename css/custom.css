@@ -133,3 +133,15 @@
 	border: 1px solid #f9aa1a;
 	color: #000;
 }
+
+input[type=email]:invalid {
+	border-color: red;
+}
+
+.table-dino thead td {
+	font-weight: 600;
+}
+
+.table-dino.table-hover thead tr:hover {
+	background-color: #fff;
+}

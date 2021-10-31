@@ -273,28 +273,22 @@
 								<div class="card-body">
 									<div class="form-group">
 										<label for="employeeName" class="form-label">Tên nhân viên</label>
-										<input
-											id="employeeName"
-											type="text"
-											placeholder="Nhập tên nhân viên"
-											class="form-control form-control-dino"
-											value="Noop">
+										<input id="employeeName" type="text" placeholder="Nhập tên nhân viên" class="form-control form-control-dino" value="Lê Thanh Tâm">
 									</div>
 									<div class="form-group">
 										<label for="employeeEmail" class="mb-0 form-label">Email</label>
 										<p class="mb-2 form-help-text">Nhân viên sẽ nhận hướng dẫn đăng nhập qua email.</p>
 										<input
-											id="employeeEmail"
-											type="email"
-											placeholder="Nhập email nhân viên"
-											class="form-control form-control-dino"
-											value="email#gmail">
-										<p class="mb-0 form-help-text text-danger">Email không đúng định dạng.</p>
+                                            readonly id="employeeEmail"
+                                            type="email"
+                                            placeholder="Nhập email nhân viên"
+                                            class="form-control form-control-dino"
+                                            value="tam.le@yougo.vn">
 									</div>
 									<div class="form-group">
 										<label for="employeeStatus" class="form-label d-block">Trạng thái tài khoản</label>
 										<select class="selectpicker dino-custom-select">
-											<option value="active">Đang hoạt động</option>
+											<option value="active" selected>Đang hoạt động</option>
 											<option value="temporary-inactive">Tạm khóa</option>
 										</select>
 									</div>
@@ -309,7 +303,7 @@
 												</div>
 											</div>
 											<div class="d-flex align-items-center dino-permission-section">
-												<input type="radio" name="emplPermission" value="manager">
+												<input type="radio" name="emplPermission" value="manager" checked>
 												<div class="d-flex flex-column ml-3">
 													<p class="mb-0 dino-permission-title">Quản lý</p>
 													<p class="mb-0 dino-permission-desc">Đầy đủ thao tác giống như Chủ kinh doanh như tính năng Chiến dịch quảng cáo.</p>
